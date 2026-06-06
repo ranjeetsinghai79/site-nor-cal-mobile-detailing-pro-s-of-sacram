@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Nor-Cal Mobile Detailing Pros",
+    tagline: "Your Car Deserves The Best.",
+    phone: "(916) 370-2451",
+    phoneHref: "tel:+19163702451",
+    email: "info@norcalmobiledetailingpros.com",
+    address: "123 Main St",
+    city: "Sacramento",
+    serviceAreas: ["Northern Cali", "Sacramento"],
+    license: "CA Detailing License #12345",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ember",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Interior Detailing", desc: "Deep cleaning and restoration for a fresh, new car feel inside.", urgent: false },
+    { icon: "truck", title: "Exterior Detailing", desc: "Thorough wash, wax, and polish for a brilliant, showroom-ready finish.", urgent: false },
+    { icon: "wrench", title: "Scratch Removal", desc: "Expert techniques to safely eliminate unsightly scratches and swirl marks.", urgent: false },
+    { icon: "shield-check", title: "Ceramic Coating", desc: "Long-lasting paint protection, incredible gloss, and easy maintenance.", urgent: false },
+    { icon: "droplets", title: "Water Spot Removal", desc: "Specialized treatment to remove stubborn water spots from all surfaces.", urgent: false },
+    { icon: "star", title: "Headlight Restoration", desc: "Restore clarity and brightness to foggy headlights for improved visibility.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Sarah L.", location: "Sacramento", stars: 5, text: "Nor-Cal Mobile Detailing Pros did an amazing job on my SUV last week! It had been neglected for months, and they made it look brand new again. The interior detailing was meticulous, and the ceramic coating gave it an incredible shine. Worth every penny!" },
+    { name: "Mark T.", location: "Roseville", stars: 5, text: "I called Nor-Cal for a quick exterior detail and scratch removal. They arrived on time, were very professional, and the results were fantastic. My car looks like it just rolled off the lot. I highly recommend their mobile service – so convenient!" },
+    { name: "Jessica R.", location: "El Dorado Hills", stars: 5, text: "My boat was in desperate need of a good cleaning after a long season. Nor-Cal Mobile Detailing Pros tackled it with ease. The oxidation removal made a huge difference, and the deck looks pristine. I'm so impressed with their attention to detail and friendly service." }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Licensed & Insured", "Mobile Service", "5-Star Rated", "Free Test Spot", "NATE Certified", "GAF Master Elite"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 5000, label: "Vehicles Detailed", suffix: "+", decimals: 0 },
+    { value: 10, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "truck", title: "Mobile Service", desc: "We come to you, wherever you are, for ultimate convenience." },
+    { icon: "dollar-sign", title: "Fair & Transparent Pricing", desc: "Upfront quotes with no hidden fees, ensuring you get the best value." },
+    { icon: "award", title: "Certified Professionals", desc: "Our detailers are highly trained and certified in the latest techniques." },
+    { icon: "thumbs-up", title: "Satisfaction Guaranteed", desc: "We stand behind our work with a promise of complete customer satisfaction." },
+    { icon: "clock", title: "Efficient & Timely", desc: "We work diligently to complete services promptly without compromising quality." },
+    { icon: "sparkles", title: "Premium Products", desc: "Only the highest quality, safest products are used for superior results." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Interior Detailing", "Exterior Detailing", "Scratch Removal", "Ceramic Coating", "Water Spot Removal", "Headlight Restoration"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
